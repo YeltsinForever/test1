@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="libs/nouislider/nouislider.min.js"></script>
+    <link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <header>
+       <div class="main-block">
+            <div class="main-block__title">
+               <div class="tags">
+                   <button>Technology</button>
+                   <button>Startups</button>
+                </div>
+               <div class="main-block__info">
+                    <h1>The smartest clock that  was ever made!</h1>
+                    <h3>The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The story began as a sequel to Tolkien's work.</h3>
+                    <button>See the features <img src="assets/arrow.png"></button>
+               </div>
+               <div class="main-block__statistic">
+                 <div class="statstic-block"> 
+                     <div class="statstic-block__ico i1"><img src="assets/forma 1.png"></div>
+                     <div class="statstic-block__txt">
+                         <h4>$98,420</h4>
+                        <span>Projected Revenue</span>
+                    </div>
+                </div>
+                 <div class="statstic-block"> 
+                     <div class="statstic-block__ico i2"><img src="assets/forma 2.png"></div>
+                     <div class="statstic-block__txt">
+                         <h4>325</h4>
+                         <span>New Users</span>
+                        </div>
+                    </div>
+                 <div class="statstic-block"> 
+                     <div class="statstic-block__ico i3"><img src="assets/forma 3.png"></div>
+                     <div class="statstic-block__txt">
+                         <h4>3,567</h4>
+                         <span>Products Sold</span>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="main-block__filter">
+                <div class="filter__head">
+                    <div class="filters">Filters</div>
+                    <div class="clear" id="clear-block" onclick="Clear()">Clear All <img src="assets/trash.svg"></div>
+                </div>
+                <div class="filter__brand">
+                    <h5>Brand:</h5>
+                    <div class="brand-list">
+                       <div class="brand-list__element  brand-list__active" id="el1" onclick="crossEl1(el1)">Sony<span id="cross1" class="cross-el cross-ativation"> ✖ </span> </div>
+                       <div class="brand-list__element" id="el2" onclick="crossEl2(el2)">Apple<span id="cross2" class="cross-el"> ✖ </span></div>
+                       <div class="brand-list__element brand-list__active" id="el3" onclick="crossEl3(el3)">Bose<span id="cross3" class="cross-el cross-ativation"> ✖ </span></div>
+                       <div class="brand-list__element brand-list__active" id="el4" onclick="crossEl4(el4)">Dell<span id="cross4" class="cross-el cross-ativation"> ✖ </span></div>
+                       <div class="brand-list__element brand-list__active" id="el5" onclick="crossEl5(el5)">LG<span id="cross5" class="cross-el cross-ativation"> ✖ </span></div>
+                       <div class="brand-list__element" id="el6" onclick="crossEl6(el6)">Samsung<span id="cross6" class="cross-el"> ✖ </span></div>
+                       <div class="brand-list__element" id="el7" onclick="crossEl7(el7)">Huawei<span id="cross7" class="cross-el"> ✖ </span></div>
+                       <div class="brand-list__element" id="el8" onclick="crossEl8(el8)">HP<span id="cross8" class="cross-el"> ✖ </span></div>
+                    </div>
+                </div>
+                <div class="filter__price">
+                    <h5>Price range:</h5>
+                    <div class="price-range">
+                            <div class="price-range__from"><span>From</span><input type="text" id="input-with-keypress-0"></div>
+                            <div class="price-range__to"><span>To</span><input type="text" id="input-with-keypress-1"></div>
+                        </div>
+                        <div class="range-slider-wrapper">  
+                            <div id="range-slider"></div>
+                        </div>
+                            <button class="price-range__find"><img src="assets/cheked.png"> Find</button>
+                    </div>
+            </div>
+       </div>
+       <div class="slide-bar">
+            <div class="slide-bar__arrow-left"> <img src="assets/Arrow_left.png"></div>
+            <div class="slide-bar__slider-dots">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+            <div class="slide-bar__arrow-right"><img src="assets/arrow_right.png"></div>
+       </div>
+   </header> 
+   <script src="main.js"></script>
+</body>
+</html>
